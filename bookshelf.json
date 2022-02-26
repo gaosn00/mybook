@@ -1,0 +1,33 @@
+[
+{
+	"bookSourceName":"大文学 一半是人",
+	"bookSourceGroup":"",
+	"bookSourceUrl":"http://www.ywysmp.com",
+	"loginUrl":"",
+	"checkUrl":"",
+	"httpUserAgent":"",
+	"ruleFindUrl":"",
+	"ruleSearchUrl":"http://www.ywysmp.com/modules/article/search.php?q={{key}}",
+	"ruleSearchList":"class.c_row",
+	"ruleSearchName":"class.c_subject@text",
+	"ruleSearchAuthor":"class.c_value@text",
+	"ruleSearchCoverUrl":"tag.img@src",
+	"ruleSearchKind":"",
+	"ruleSearchLastChapter":"",
+	"ruleSearchNoteUrl":"class.c_subject@tag.a@href",
+	"ruleBookUrlPattern":"",
+	"ruleBookName":"",
+	"ruleBookAuthor":"",
+	"ruleCoverUrl":"",
+	"ruleBookKind":"",
+	"ruleBookLastChapter":"",
+	"ruleChapterUrl":"class.btnlink b_hot mbs@tag.a@href",
+	"ruleChapterUrlNext":"",
+	"ruleIntroduce":"",
+	"ruleChapterList":"class.chapter",
+	"ruleChapterName":"tag.a@text",
+	"ruleContentUrl":"tag.a@href",
+	"ruleContentUrlNext":"",
+	"ruleBookContent":"id.acontent@html"
+}
+]
