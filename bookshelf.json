@@ -1,33 +1,131 @@
 [
 {
-	"bookSourceName":"大文学 一半是人",
-	"bookSourceGroup":"",
-	"bookSourceUrl":"http://www.ywysmp.com",
-	"loginUrl":"",
-	"checkUrl":"",
-	"httpUserAgent":"",
-	"ruleFindUrl":"",
-	"ruleSearchUrl":"http://www.ywysmp.com/modules/article/search.php?q={{key}}",
-	"ruleSearchList":"class.c_row",
-	"ruleSearchName":"class.c_subject@text",
-	"ruleSearchAuthor":"class.c_value@text",
-	"ruleSearchCoverUrl":"tag.img@src",
-	"ruleSearchKind":"",
-	"ruleSearchLastChapter":"",
-	"ruleSearchNoteUrl":"class.c_subject@tag.a@href",
-	"ruleBookUrlPattern":"",
-	"ruleBookName":"",
-	"ruleBookAuthor":"",
+  "bookSourceComment": "my",
+  "bookSourceGroup": "my漫画",
+  "bookSourceName": "漫画猫",
+  "bookSourceType": 0,
+  "bookSourceUrl": "https://www.maofly.com",
+  "customOrder": -3671,
+  "enabled": true,
+  "enabledExplore": true,
+  "exploreUrl": "",
+  "header": "{\n    'User-Agent': 'Mobile'\n    \n}",
+  "lastUpdateTime": 1648634757955,
+  "respondTime": 180000,
+  "ruleBookInfo": {
+    "author": "",
+    "init": "",
+    "intro": "class.comic_story@textNodes##漫画简介：",
+    "name": "class.comic-title@text"
+  },
+  "ruleContent": {
+    "content": "@js:\r\neval(String(java.ajax('https://www.maofly.com/static/js/string.min.js')));\r\nvar img_pre = \"/uploads/\";\r\nvar asset_domain =\"{{@@class.vg-r-data@data-chapter-domain}}\";\r\neval(result.match(/img_data = \"([^\"]+)\"/)[0])\r\nvar img_arr=LZString.decompressFromBase64(img_data).split(',');\r\nimg_arr.map(x=>'<img src=\\\"'+asset_domain+img_pre+x+'\\\">').join(\"\\n\")",
+    "imageStyle": "FULL",
+    "nextContentUrl": ""
+  },
+  "ruleExplore": {
+    "bookList": ""
+  },
+  "ruleSearch": {
+    "author": "class.one-line comic-author@text",
+    "bookList": "class.col-4 col-sm-2 col-xl-1 px-1 px-md-1 px-lg-2 px-xl-1 pb-3",
+    "bookUrl": "a@href",
+    "checkKeyWord": "看得见的女孩",
+    "coverUrl": "tag.img@src",
+    "intro": "",
+    "kind": "",
+    "lastChapter": "",
+    "name": "class.mt-0 mb-1 one-line@text",
+    "wordCount": ""
+  },
+  "ruleToc": {
+    "chapterList": "class.sort_div fixed-wd-num",
+    "chapterName": "tag.a@text",
+    "chapterUrl": "tag.a@href"
+  },
+  "searchUrl": "https://www.maofly.com/search.html?q={{key}}",
+  "weight": 0
+},
+{
+    "bookSourceName":"大文学",
+    "bookSourceGroup":"my,一半是人",
+    "bookSourceUrl":"http://www.ywysmp.com",
+    "loginUrl":"",
+    "checkUrl":"",
+    "httpUserAgent":"",
+    "ruleFindUrl":"",
+    "ruleSearchUrl":"http://www.ywysmp.com/modules/article/search.php?q=searchKey",
+    "ruleSearchList":"class.c_row",
+    "ruleSearchName":"class.c_subject@text",
+    "ruleSearchAuthor":"class.c_value@text",
+    "ruleSearchCoverUrl":"tag.img@src",
+    "ruleSearchKind":"",
+    "ruleSearchLastChapter":"",
+    "ruleSearchNoteUrl":"class.c_subject@tag.a@href",
+    "ruleBookUrlPattern":"",
+    "ruleBookName":"",
+    "ruleBookAuthor":"",
 	"ruleCoverUrl":"",
 	"ruleBookKind":"",
-	"ruleBookLastChapter":"",
-	"ruleChapterUrl":"class.btnlink b_hot mbs@tag.a@href",
-	"ruleChapterUrlNext":"",
+	"ruleBookLastChapter":"class.divbg@text",
+    "ruleChapterUrl":"class.btnlink b_hot mbs@tag.a@href",
+    "ruleChapterUrlNext":"",
 	"ruleIntroduce":"",
-	"ruleChapterList":"class.chapter",
-	"ruleChapterName":"tag.a@text",
-	"ruleContentUrl":"tag.a@href",
-	"ruleContentUrlNext":"",
-	"ruleBookContent":"id.acontent@html"
-}
+    "ruleChapterList":"class.chapter",
+    "ruleChapterName":"tag.a@text",
+    "ruleContentUrl":"tag.a@href",
+    "ruleContentUrlNext":"",
+    "ruleBookContent":"id.acontent@textNodes",
+    "enable": true,
+    "serialNumber": 1
+},
+{
+  "bookSourceComment": "",
+  "bookSourceGroup": "my",
+  "bookSourceName": "飞速中文网",
+  "bookSourceType": 0,
+  "bookSourceUrl": "https://www.feiszw.com/",
+  "bookUrlPattern": "https://www.feiszw.com/Html/\\d+/index.html",
+  "customOrder": 408,
+  "enabled": true,
+  "enabledExplore": true,
+  "exploreUrl": "奇幻玄幻::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=1&page={{page}}\n武侠仙侠::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=2&page={{page}}\n都市小说::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=3&page={{page}}\n历史军事::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=4&page={{page}}\n游戏竞技::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=5&page={{page}}\n科幻灵异::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=6&page={{page}}\n同人小说::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=7&page={{page}}\n女频言情::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=8&page={{page}}\n其他小说::https://www.feiszw.com/Book/ShowBookList.aspx?tclassid=9&page={{page}}",
+  "lastUpdateTime": 1648626342140,
+  "respondTime": 2418,
+  "ruleBookInfo": {
+    "author": "class.info@tag.p.0@span@text##.*\\ / ",
+    "coverUrl": "class.bookimg@img@src",
+    "init": "",
+    "intro": "class.intro@textNodes",
+    "kind": "class.info@tag.p.1@text##.*更新时间：",
+    "lastChapter": "class.intro@tag.p.0@a@text",
+    "name": "class.info@tag.p.0@a@text"
+  },
+  "ruleContent": {
+    "content": "id.content@tag.p@html##（本章完）|最快更新无错小说.*com|手机请访问.*|推荐\\：.*"
+  },
+  "ruleExplore": {
+    "author": ".tab5@text",
+    "bookList": ".listbox li",
+    "bookUrl": "class.tab3@tag.a@href",
+    "kind": ".tab2@text",
+    "lastChapter": ".tab4@text",
+    "name": ".tab3@text"
+  },
+  "ruleSearch": {
+    "author": "id.CListTitle@textNodes##\\[|\\|.*",
+    "bookList": "class.listbox@class.book",
+    "bookUrl": "id.CListTitle@tag.a.0@href",
+    "intro": "id.CListText@text",
+    "lastChapter": "id.CListTitle@tag.a.3@text",
+    "name": "id.CListTitle@tag.a.0@text"
+  },
+  "ruleToc": {
+    "chapterList": "class.chapterlist@li",
+    "chapterName": "a@text",
+    "chapterUrl": "a@href"
+  },
+  "searchUrl": "https://www.feiszw.com/book/search.aspx?SearchKey={{key}}&SearchClass=1&SeaButton=,{\n\"charset\": \"gbk\"\n}",
+  "weight": 0
+ }	
 ]
