@@ -10,7 +10,7 @@
   "enabledExplore": true,
   "exploreUrl": "",
   "header": "{\n    'User-Agent': 'Mobile'\n    \n}",
-  "lastUpdateTime": 1648634757955,
+  "lastUpdateTime": 1648648976072,
   "respondTime": 180000,
   "ruleBookInfo": {
     "author": "",
@@ -19,7 +19,7 @@
     "name": "class.comic-title@text"
   },
   "ruleContent": {
-    "content": "@js:\r\neval(String(java.ajax('https://www.maofly.com/static/js/string.min.js')));\r\nvar img_pre = \"/uploads/\";\r\nvar asset_domain =\"{{@@class.vg-r-data@data-chapter-domain}}\";\r\neval(result.match(/img_data = \"([^\"]+)\"/)[0])\r\nvar img_arr=LZString.decompressFromBase64(img_data).split(',');\r\nimg_arr.map(x=>'<img src=\\\"'+asset_domain+img_pre+x+'\\\">').join(\"\\n\")",
+    "content": "@js:\r\neval(String(java.ajax('https://www.maofly.com/static/js/string.min.js')));\r\nvar img_pre = \"/uploads/\";\r\nvar asset_domain =\"{{@@class.vg-r-data@data-chapter-domain}}\";\r\neval(result.match(/img_data = \"([^\"]+)\"/)[0])\r\nheader={\"Rreferer\":\"https://www.maofly.com\"}\r\nheaders={\"headers\":JSON.stringify(header)}\r\nvar img_arr=LZString.decompressFromBase64(img_data).split(',');\r\nimg_arr.map(x=>'<img src=\\\"'+asset_domain+img_pre+x+\",\"+JSON.stringify(headers)+'\\\">').join(\"\\n\")\r",
     "imageStyle": "FULL",
     "nextContentUrl": ""
   },
